@@ -2,6 +2,7 @@ import pytest
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 import time
 
 BASE_URL = "http://158.160.87.146:5000"
