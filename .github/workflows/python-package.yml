@@ -46,8 +46,8 @@ jobs:
 
         testit results import \
           --url https://team-hawh.testit.software/ \
-          --project-id 5236eb3f-7c05-46f9-a609-dc0278896464 \
-          --configuration-id 15dbb164-c1aa-4cbf-830c-8c01ae14f4fb \
+          --project-id 1 \
+          --configuration-id 0196384b-25bc-7fad-adca-3fa4d6623ee6 \
           --testrun-name "Pytest test run" \
           --results reports
           
