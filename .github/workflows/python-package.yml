@@ -50,3 +50,4 @@ jobs:
           --configuration-id 15dbb164-c1aa-4cbf-830c-8c01ae14f4fb \
           --testrun-name "Pytest test run" \
           --results reports
+          
