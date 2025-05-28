@@ -1,4 +1,5 @@
 import pytest
+import testit_adapter_pytest
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -37,16 +38,5 @@ def login_admin(driver):
 
 
 #Test.it
-pip install testit-cli
-testit --help
-
-usage: testit [options]
-[...]
-
-export TMS_TOKEN=<dHBzcmdHNWpuVzNBeTl1VzJy>
-testit results import \
-  --url < https://team-hawh.testit.software/> \
-  --project-id 5236eb3f-7c05-46f9-a609-dc0278896464 \
-  --configuration-id 15dbb164-c1aa-4cbf-830c-8c01ae14f4fb \
-  --testrun-name "Pytest test run" \
-  --results reports
+def pytest_addoption(parser):
+    parser.addoption("--testit", action="store_true", help="Enable TestIT integration")
