@@ -1,5 +1,4 @@
 import pytest
-import testit_adapter_pytest
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -36,7 +35,3 @@ def login_admin(driver):
     driver.find_element(By.ID, "add-btn").click()
     time.sleep(1)
 
-
-#Test.it
-def pytest_addoption(parser):
-    parser.addoption("--testit", action="store_true", help="Enable TestIT integration")
